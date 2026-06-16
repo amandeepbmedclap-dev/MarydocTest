@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Footer } from "@/components/landing/Footer";
+import { HeroWaveDivider } from "@/components/landing/HeroWaveDivider";
+import { PromoPopup } from "@/components/landing/PromoPopup";
 
 const Testimonials = dynamic(
   () => import("@/components/landing/Testimonials").then((mod) => mod.Testimonials),
@@ -23,9 +25,11 @@ export default function Home() {
         />
         <Header />
         <Hero />
+        <HeroWaveDivider />
       </div>
       <Testimonials />
       <Footer />
+      <PromoPopup />
     </main>
   );
 }

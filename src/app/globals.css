@@ -149,6 +149,24 @@ html {
   animation-delay: 0.65s;
 }
 
+.hero-wave-divider {
+  overflow: hidden;
+}
+
+.hero-wave-divider__svg {
+  animation: hero-wave-drift 16s linear infinite;
+  will-change: transform;
+}
+
+@keyframes hero-wave-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @keyframes drawer-slide-in {
   from {
     transform: translateX(100%);
@@ -160,6 +178,52 @@ html {
 
 .drawer-slide-in {
   animation: drawer-slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.promo-popup-visual {
+  background: linear-gradient(135deg, #552c85 0%, #188a44 100%);
+}
+
+.promo-popup-pills {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding-left: 0.35rem;
+}
+
+.promo-popup-pill {
+  display: block;
+  width: 0.85rem;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #d4f5de 0%, #188a44 100%);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.promo-popup-pill--1 {
+  height: 46%;
+}
+
+.promo-popup-pill--2 {
+  height: 72%;
+}
+
+.promo-popup-pill--3 {
+  height: 54%;
+}
+
+.promo-popup-image-mask {
+  clip-path: ellipse(98% 96% at 68% 50%);
+}
+
+@media (min-width: 640px) {
+  .promo-popup-image-mask {
+    clip-path: path(
+      "M0 0 H56 C24 90 56 180 56 270 C24 360 0 450 0 540 V600 H960 C1040 600 1080 300 1140 300 C1200 300 1240 0 1400 0 H0 Z"
+    );
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,6 +239,11 @@ html {
   .hero-fade-in {
     animation: none !important;
     opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-wave-divider__svg {
+    animation: none !important;
     transform: none !important;
   }
 }

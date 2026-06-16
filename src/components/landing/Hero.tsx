@@ -21,7 +21,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto flex min-h-[calc(100dvh-60px)] w-full min-w-0 max-w-[1440px] flex-col px-4 pb-8 pt-6 sm:min-h-[calc(100dvh-68px)] sm:px-6 sm:pb-10 sm:pt-8 md:px-8 lg:min-h-[calc(100vh-80px)] lg:flex-row lg:items-center lg:px-10 lg:pb-0 lg:pt-10 xl:px-14 2xl:px-16">
+      <div className="relative mx-auto flex min-h-[calc(100dvh-60px)] w-full min-w-0 max-w-[1440px] flex-col px-4 pb-16 pt-6 sm:min-h-[calc(100dvh-68px)] sm:px-6 sm:pb-[4.5rem] sm:pt-8 md:px-8 lg:min-h-[calc(100vh-80px)] lg:flex-row lg:items-center lg:px-10 lg:pb-8 lg:pt-10 xl:px-14 2xl:px-16">
         <div className="flex w-full min-w-0 max-w-full flex-col justify-center pt-2 sm:pt-4 md:max-w-[560px] lg:order-1 lg:w-[54%] lg:max-w-[54%] lg:shrink-0 lg:py-0 lg:pr-4 xl:pr-6">
           <div className="w-full overflow-x-visible overflow-y-clip md:w-auto">
             <h1
