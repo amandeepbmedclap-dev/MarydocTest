@@ -1,26 +1,175 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --marydoc-purple: #552c85;
+  --marydoc-green: #188a44;
+  --marydoc-mint: #d4f5de;
+  --marydoc-gradient: linear-gradient(135deg, #552c85 0%, #4a3580 42%, #188a44 100%);
+  --marydoc-gradient-deep: linear-gradient(160deg, #552c85 0%, #3d2060 45%, #188a44 100%);
+  --background: var(--marydoc-purple);
+  --foreground: #ffffff;
 }
 
 @theme inline {
+  --color-marydoc-purple: var(--marydoc-purple);
+  --color-marydoc-green: var(--marydoc-green);
+  --color-marydoc-mint: var(--marydoc-mint);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  overflow-x: clip;
+  overflow-y: auto;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  border-radius: 9999px;
+  background: #188a44;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.625rem 1rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  outline: 2px solid #d4f5de;
+  outline-offset: 2px;
+}
+
+.site-header:not([data-scrolled="true"]) .header-nav-link {
+  color: rgb(255 255 255);
+}
+
+.site-header:not([data-scrolled="true"]) .header-nav-link:hover {
+  color: #d4f5de;
+}
+
+.site-header[data-scrolled="true"] .header-nav-link {
+  color: rgb(85 44 133);
+}
+
+.site-header[data-scrolled="true"] .header-nav-link:hover {
+  color: var(--marydoc-green);
+}
+
+.site-header:not([data-scrolled="true"]) .mobile-menu-trigger {
+  color: rgb(255 255 255);
+}
+
+.site-header[data-scrolled="true"] .mobile-menu-trigger {
+  color: rgb(85 44 133);
+}
+
+.site-header {
+  isolation: isolate;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+a[href],
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+label[for],
+select,
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+[disabled] {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: rgba(24, 138, 68, 0.35);
+  color: #ffffff;
+}
+
+/* Hide Next.js dev toolbar (blue bar with N) in local development */
+nextjs-portal {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+@keyframes hero-line-up {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-line {
+  animation: hero-line-up 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-fade-in {
+  animation: hero-fade-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.55s;
+}
+
+.hero-cta {
+  animation-delay: 0.65s;
+}
+
+@keyframes drawer-slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawer-slide-in {
+  animation: drawer-slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-line,
+  .hero-fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
