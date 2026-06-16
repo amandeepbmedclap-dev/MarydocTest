@@ -66,12 +66,15 @@ export function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
       if (event.key === "Escape") closeMenu();
     };
 
-    const previousOverflow = document.body.style.overflow;
+    const previousHtmlOverflow = document.documentElement.style.overflow;
+    const previousBodyOverflow = document.body.style.overflow;
+    document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.documentElement.style.overflow = previousHtmlOverflow;
+      document.body.style.overflow = previousBodyOverflow;
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [menuOpen, closeMenu]);

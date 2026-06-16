@@ -4,7 +4,7 @@
   --marydoc-purple: #552c85;
   --marydoc-green: #188a44;
   --marydoc-mint: #d4f5de;
-  --marydoc-gradient: linear-gradient(135deg, #552c85 0%, #4d2878 48%, #188a44 100%);
+  --marydoc-gradient: linear-gradient(135deg, #552c85 0%, #552c85 28%, #4d2878 52%, #188a44 100%);
   --marydoc-gradient-deep: linear-gradient(160deg, #552c85 0%, #3d2060 45%, #188a44 100%);
   --background: var(--marydoc-purple);
   --foreground: #ffffff;
@@ -25,7 +25,6 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   min-height: 100%;
   overflow-x: clip;
-  overflow-y: auto;
   padding-left: env(safe-area-inset-left, 0px);
   padding-right: env(safe-area-inset-right, 0px);
 }
@@ -81,14 +80,9 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.site-header-hero {
-  background: linear-gradient(
-    90deg,
-    var(--marydoc-purple) 0%,
-    var(--marydoc-purple) 55%,
-    #4d2878 100%
-  );
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06);
+.site-header:not([data-scrolled="true"]) {
+  box-shadow: none;
+  border-bottom: none;
 }
 
 a[href],
@@ -119,6 +113,7 @@ html {
   scroll-behavior: smooth;
   min-height: 100%;
   overflow-x: clip;
+  overflow-y: auto;
 }
 
 @keyframes hero-line-up {

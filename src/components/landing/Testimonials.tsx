@@ -142,9 +142,11 @@ function VideoModal({
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
     };
+    document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKeyDown);
     return () => {
+      document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKeyDown);
     };
