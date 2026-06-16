@@ -96,61 +96,20 @@ function slideOffset(slideIndex: number, visibleCount: number) {
 
 function VideoStoryThumbnail({
   poster,
-  videoSrc,
 }: {
   poster: string;
-  videoSrc: string;
 }) {
-  const previewRef = useRef<HTMLVideoElement>(null);
-  const [loadedSrc, setLoadedSrc] = useState<string | undefined>(undefined);
   const [imageError, setImageError] = useState(false);
-  const [previewReady, setPreviewReady] = useState(false);
-
-  const loadPreview = useCallback(() => {
-    setLoadedSrc((current) => current ?? videoSrc);
-  }, [videoSrc]);
-
-  const playPreview = useCallback(() => {
-    loadPreview();
-    const preview = previewRef.current;
-    if (!preview) return;
-    preview.currentTime = 0;
-    void preview.play().catch(() => {});
-  }, [loadPreview]);
-
-  const pausePreview = useCallback(() => {
-    const preview = previewRef.current;
-    if (!preview) return;
-    preview.pause();
-    preview.currentTime = 0;
-  }, []);
 
   return (
-    <div
-      className="absolute inset-0"
-      onMouseEnter={playPreview}
-      onMouseLeave={pausePreview}
-    >
+    <div className="absolute inset-0">
       <div className="absolute inset-0 bg-gradient-to-br from-[#552c85] to-[#188a44]" aria-hidden="true" />
-      <video
-        ref={previewRef}
-        src={loadedSrc}
-        muted
-        loop
-        playsInline
-        preload="none"
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 group-hover:scale-105 ${
-          previewReady ? "opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100" : "opacity-0"
-        }`}
-        aria-hidden="true"
-        onLoadedData={() => setPreviewReady(true)}
-      />
       {!imageError ? (
         <Image
           src={poster}
           alt=""
           fill
-          className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:opacity-0"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           sizes="(max-width: 640px) 88vw, (max-width: 1024px) 45vw, 320px"
           onError={() => setImageError(true)}
@@ -158,7 +117,7 @@ function VideoStoryThumbnail({
         />
       ) : null}
       <div className="absolute inset-0 bg-black/20 transition-colors duration-300 group-hover:bg-black/35" aria-hidden="true" />
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <AnimatedPlayButton />
       </div>
     </div>
@@ -373,10 +332,7 @@ export function Testimonials() {
                         whileTap={{ scale: 0.98 }}
                         transition={SPRING}
                       >
-                        <VideoStoryThumbnail
-                          poster={story.poster}
-                          videoSrc={story.videoSrc}
-                        />
+                        <VideoStoryThumbnail poster={story.poster} />
                       </motion.button>
                     ))}
                   </motion.div>

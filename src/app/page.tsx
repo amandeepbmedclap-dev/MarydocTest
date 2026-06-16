@@ -14,20 +14,23 @@ export const heroGradient = "var(--marydoc-gradient)";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main id="main-content" className="relative overflow-x-clip">
-        <div className="relative min-h-[calc(100dvh-60px)] overflow-visible sm:min-h-[calc(100dvh-68px)] lg:min-h-[calc(100vh-80px)]">
-          <div
-            className="pointer-events-none absolute inset-0"
-            style={{ background: heroGradient }}
-            aria-hidden="true"
-          />
-          <Hero />
-        </div>
-        <Testimonials />
-        <Footer />
-      </main>
-    </>
+    <main id="main-content" className="relative overflow-x-clip">
+      <div className="relative min-h-[100dvh] overflow-visible">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background: [
+              "linear-gradient(180deg, #552c85 0px, #552c85 80px, transparent 160px)",
+              heroGradient,
+            ].join(", "),
+          }}
+          aria-hidden="true"
+        />
+        <Header />
+        <Hero />
+      </div>
+      <Testimonials />
+      <Footer />
+    </main>
   );
 }

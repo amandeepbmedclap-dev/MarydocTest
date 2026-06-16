@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
 import { createPortal } from "react-dom";
 
-const THEME_GRADIENT = "linear-gradient(160deg, #552c85 0%, #4a3580 42%, #188a44 100%)";
+const THEME_GRADIENT = "linear-gradient(160deg, #552c85 0%, #4d2878 42%, #188a44 100%)";
 
 type NavLink = { label: string; href: string };
 

@@ -4,7 +4,7 @@
   --marydoc-purple: #552c85;
   --marydoc-green: #188a44;
   --marydoc-mint: #d4f5de;
-  --marydoc-gradient: linear-gradient(135deg, #552c85 0%, #4a3580 42%, #188a44 100%);
+  --marydoc-gradient: linear-gradient(135deg, #552c85 0%, #4d2878 48%, #188a44 100%);
   --marydoc-gradient-deep: linear-gradient(160deg, #552c85 0%, #3d2060 45%, #188a44 100%);
   --background: var(--marydoc-purple);
   --foreground: #ffffff;
@@ -79,6 +79,16 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
+}
+
+.site-header-hero {
+  background: linear-gradient(
+    90deg,
+    var(--marydoc-purple) 0%,
+    var(--marydoc-purple) 55%,
+    #4d2878 100%
+  );
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.06);
 }
 
 a[href],

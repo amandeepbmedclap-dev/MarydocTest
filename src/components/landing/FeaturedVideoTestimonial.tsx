@@ -33,9 +33,7 @@ export function FeaturedVideoTestimonial() {
     setShowOverlay(false);
 
     const startPlayback = () => {
-      void video.play().catch(() => {
-        setShowOverlay(true);
-      });
+      void video.play().catch(() => setShowOverlay(true));
     };
 
     if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {

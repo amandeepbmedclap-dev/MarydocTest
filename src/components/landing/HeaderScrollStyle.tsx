@@ -18,7 +18,7 @@ export function HeaderScrollStyle({ children }: { children: React.ReactNode }) {
       className={`site-header sticky top-0 z-[100] w-full pt-[env(safe-area-inset-top)] transition-colors duration-300 ${
         scrolled
           ? "border-b border-marydoc-green/20 bg-white/95 shadow-sm"
-          : "bg-transparent"
+          : "site-header-hero"
       }`}
     >
       {children}
