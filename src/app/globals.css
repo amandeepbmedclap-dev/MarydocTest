@@ -116,6 +116,84 @@ html {
   overflow-y: auto;
 }
 
+html:not([data-app-ready="true"]) {
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+html:not([data-app-ready="true"]) body {
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+html:not([data-app-ready="true"]) .app-content {
+  display: none !important;
+}
+
+html:not([data-app-ready="true"]) .hero-line,
+html:not([data-app-ready="true"]) .hero-fade-in,
+html:not([data-app-ready="true"]) .hero-cta {
+  animation-play-state: paused !important;
+}
+
+.initial-load-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  isolation: isolate;
+}
+
+.initial-load-fallback {
+  animation: initial-load-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.initial-load-fallback--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.initial-load-fallback__mark {
+  animation: initial-load-pulse 2.4s ease-in-out infinite;
+}
+
+.initial-load-fallback__ring {
+  stroke-dasharray: 580;
+  stroke-dashoffset: 580;
+  animation: initial-load-draw 1.8s ease-in-out forwards;
+}
+
+@keyframes initial-load-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes initial-load-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes initial-load-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes hero-line-up {
   from {
     transform: translateY(110%);
@@ -233,6 +311,18 @@ html {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  html:not([data-app-ready="true"]) .app-content {
+    display: block !important;
+  }
+
+  #initial-load-screen {
+    display: none !important;
+  }
+
+  html[data-app-ready="true"] {
+    overflow: auto;
   }
 
   .hero-line,

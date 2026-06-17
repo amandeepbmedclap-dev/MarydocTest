@@ -4,11 +4,16 @@ import { Hero } from "@/components/landing/Hero";
 import { Footer } from "@/components/landing/Footer";
 import { HeroWaveDivider } from "@/components/landing/HeroWaveDivider";
 import { PromoPopup } from "@/components/landing/PromoPopup";
+import { LoadingAnimation } from "@/components/landing/LoadingAnimation";
 
 const Testimonials = dynamic(
   () => import("@/components/landing/Testimonials").then((mod) => mod.Testimonials),
   {
-    loading: () => <section aria-hidden className="min-h-[60vh] bg-white" />,
+    loading: () => (
+      <section aria-label="Loading testimonials" className="min-h-[60vh] bg-white">
+        <LoadingAnimation className="min-h-[60vh] w-full" compact />
+      </section>
+    ),
   },
 );
 
