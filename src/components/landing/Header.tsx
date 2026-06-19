@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { HeaderNavLinks, MobileMenu } from "./MobileMenu";
 import { HeaderScrollStyle } from "./HeaderScrollStyle";
+import { ThemeToggle } from "./ThemeToggle";
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -12,12 +14,12 @@ const navLinks = [
 
 function GetStartedButton({ className = "" }: { className?: string }) {
   return (
-    <a
-      href="#get-started"
-      className={`inline-flex cursor-pointer items-center justify-center rounded-full bg-marydoc-green px-5 py-2.5 text-[12px] font-semibold text-white transition-all duration-300 hover:bg-[#157a3c] hover:shadow-[0_8px_24px_rgba(24,138,68,0.35)] sm:px-6 sm:text-[13px] ${className}`}
+    <Button
+      render={<a href="#get-started" />}
+      className={`h-auto rounded-full bg-marydoc-green px-5 py-2.5 text-[12px] font-semibold text-white hover:bg-[#157a3c] hover:shadow-[0_8px_24px_rgba(24,138,68,0.35)] sm:px-6 sm:text-[13px] ${className}`}
     >
       Get Started
-    </a>
+    </Button>
   );
 }
 
@@ -37,12 +39,16 @@ export function Header() {
           />
         </a>
 
-        <div className="relative z-10 hidden min-w-0 items-center gap-1 lg:flex xl:gap-3">
+        <div className="relative z-10 hidden min-w-0 items-center gap-2 lg:flex xl:gap-3">
           <HeaderNavLinks navLinks={navLinks} />
+          <ThemeToggle />
           <GetStartedButton className="shrink-0 px-4 py-2 text-[11px] xl:px-6 xl:py-2.5 xl:text-[13px]" />
         </div>
 
-        <MobileMenu navLinks={navLinks} />
+        <div className="relative z-[110] flex shrink-0 items-center gap-1 sm:gap-2 lg:hidden">
+          <ThemeToggle />
+          <MobileMenu navLinks={navLinks} />
+        </div>
       </div>
     </HeaderScrollStyle>
   );

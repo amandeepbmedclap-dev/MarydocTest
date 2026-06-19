@@ -136,10 +136,10 @@ function GooglePlayBadge() {
     >
       <svg viewBox="0 0 135 40" className="h-10 w-auto sm:h-11" aria-hidden="true">
         <rect width="135" height="40" rx="6" fill="#000" />
-        <path fill="#34A853" d="M9 8.5 22.5 20 9 31.5z" />
-        <path fill="#FBBC04" d="M9 8.5 22.5 20 9 20z" />
-        <path fill="#4285F4" d="M9 31.5 22.5 20 9 20z" />
-        <path fill="#EA4335" d="M22.5 20 9 8.5 22.5 14z" />
+        <path fill="#34A853" d="M9 8.5 22.5 20 19 20z" />
+        <path fill="#FBBC04" d="M9 8.5 19 20 9 20z" />
+        <path fill="#4285F4" d="M9 31.5 9 20 19 20z" />
+        <path fill="#EA4335" d="M9 31.5 19 20 22.5 20z" />
         <text x="44" y="15" fill="#fff" fontSize="8" fontFamily="system-ui, sans-serif">
           GET IT ON
         </text>
@@ -156,10 +156,9 @@ export function Footer() {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <div className="relative z-20 bg-white pt-4 sm:pt-10">
+    <div className="relative z-20 bg-background pt-4 transition-colors duration-300 sm:pt-10">
       <motion.footer
-        className="relative overflow-hidden rounded-t-[2rem] border border-b-0 border-white/10 sm:rounded-t-[3rem] md:rounded-t-[3.5rem]"
-        style={{ background: "var(--marydoc-gradient-deep)" }}
+        className="relative overflow-hidden rounded-t-[2rem] border border-b-0 border-white/10 bg-footer sm:rounded-t-[3rem] md:rounded-t-[3.5rem]"
         initial={{ opacity: 1, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "0px 0px -20px 0px", amount: 0.05 }}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for your medical marijuana card online with Marydoc. Licensed doctors, same-day evaluations, HIPAA-secure telehealth consultations nationwide.">
+  <title>Marydoc — Your Medical Marijuana Card, Approved Today</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ════════ HEADER ════════ -->
+  <header class="header" id="header">
+    <div class="header__pill">
+      <a href="#top" class="logo" aria-label="Marydoc home">
+        <svg class="logo__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 43C24 43 7 28.5 7 17.5C7 11 11.5 6.5 18 6.5C20.8 6.5 23.2 8.3 24 11C24.8 8.3 27.2 6.5 30 6.5C36.5 6.5 41 11 41 17.5C41 28.5 24 43 24 43Z" fill="#98c54e"/>
+          <path d="M24 39C24 39 11 27 11 17.8C11 13.4 14.4 10 18.8 10C21.2 10 23.3 11.6 24 13.9C24.7 11.6 26.8 10 29.2 10C33.6 10 37 13.4 37 17.8C37 27 24 39 24 39Z" fill="#1f6838"/>
+        </svg>
+        <span class="logo__word"><b>Mary</b><i>doc</i></span>
+      </a>
+      <nav class="header__nav" aria-label="Primary">
+        <a href="#how" class="header__link">How It Works</a>
+        <a href="#features" class="header__link">Why Marydoc</a>
+        <a href="#conditions" class="header__link">Conditions</a>
+        <a href="#reviews" class="header__link">Reviews</a>
+        <a href="#faq" class="header__link">FAQ</a>
+      </nav>
+      <div class="header__cta">
+        <a href="tel:8882818758" class="header__phone">(888) 281-8758</a>
+        <a href="#start" class="btn btn--lime btn--sm">Get My Card</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- mobile drawer -->
+  <div class="drawer" id="drawer">
+    <nav class="drawer__nav">
+      <a href="#how" class="drawer__link">How It Works</a>
+      <a href="#features" class="drawer__link">Why Marydoc</a>
+      <a href="#conditions" class="drawer__link">Conditions</a>
+      <a href="#reviews" class="drawer__link">Reviews</a>
+      <a href="#faq" class="drawer__link">FAQ</a>
+    </nav>
+    <a href="#start" class="btn btn--lime btn--xl drawer__cta">Start My Evaluation</a>
+    <a href="tel:8882818758" class="drawer__phone">Call (888) 281-8758</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ════════ HERO ════════ -->
+    <section class="hero">
+      <!-- faint line-art decorations -->
+      <svg class="hero__deco hero__deco--1" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 43C24 43 7 28.5 7 17.5C7 11 11.5 6.5 18 6.5C20.8 6.5 23.2 8.3 24 11C24.8 8.3 27.2 6.5 30 6.5C36.5 6.5 41 11 41 17.5C41 28.5 24 43 24 43Z"/></svg>
+      <svg class="hero__deco hero__deco--2" viewBox="0 0 120 130" aria-hidden="true"><path d="M60 8 C98 36 100 88 60 122 C20 88 22 36 60 8 Z"/><path d="M60 14 L60 122"/><path d="M60 50 C72 44 80 36 84 26 M60 50 C48 44 40 36 36 26 M60 86 C74 80 84 70 88 58 M60 86 C46 80 36 70 32 58"/></svg>
+      <svg class="hero__deco hero__deco--3" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20"/><path d="M24 14v20M14 24h20"/></svg>
+
+      <div class="hero__wrap">
+        <aside class="hero__side reveal">
+          <a href="#start" class="spin" aria-label="Get your medical card">
+            <svg class="spin__ring" viewBox="0 0 158 158" aria-hidden="true">
+              <defs><path id="spinPath" d="M79,79 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/></defs>
+              <circle cx="79" cy="79" r="77" />
+              <text><textPath href="#spinPath" textLength="350">GET YOUR MEDICAL CARD&#160;&#160;•&#160;&#160;GET YOUR MEDICAL CARD&#160;&#160;•&#160;&#160;</textPath></text>
+            </svg>
+            <span class="spin__core">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M24 43C24 43 7 28.5 7 17.5C7 11 11.5 6.5 18 6.5C20.8 6.5 23.2 8.3 24 11C24.8 8.3 27.2 6.5 30 6.5C36.5 6.5 41 11 41 17.5C41 28.5 24 43 24 43Z" fill="#98c54e"/>
+                <path d="M24 39C24 39 11 27 11 17.8C11 13.4 14.4 10 18.8 10C21.2 10 23.3 11.6 24 13.9C24.7 11.6 26.8 10 29.2 10C33.6 10 37 13.4 37 17.8C37 27 24 39 24 39Z" fill="#1f6838"/>
+              </svg>
+            </span>
+          </a>
+
+          <p class="hero__note">Licensed doctors, same-day evaluations, and HIPAA-secure telehealth — get your medical cannabis card without leaving home.</p>
+
+          <div class="hero__help">
+            <span class="hero__help-ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div>
+              <b>Need Any Help?</b>
+              <a href="tel:8882818758">(888) 281-8758</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="hero__main">
+          <h1 class="hero__title reveal">Natural Relief<br>Healthy Living</h1>
+
+          <div class="hero__carousel reveal">
+            <div class="carousel">
+              <div class="carousel__track" id="carouselTrack">
+                <figure><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=720&h=560&fit=crop&q=80" alt="Doctor on a telehealth consultation" loading="eager"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=720&h=560&fit=crop&q=80" alt="Patient enjoying a healthy, active life" loading="lazy"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=720&h=560&fit=crop&q=80" alt="Licensed physician smiling at her desk" loading="lazy"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=720&h=560&fit=crop&q=80" alt="Completing the application on a phone" loading="lazy"></figure>
+                <figure><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=720&h=560&fit=crop&q=80" alt="Happy certified patient" loading="lazy"></figure>
+              </div>
+            </div>
+            <div class="carousel__nav">
+              <button class="carousel__btn" id="carNext" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 6 15 12 9 18"/></svg></button>
+              <button class="carousel__btn" id="carPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 6 9 12 15 18"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ START BAND (state selector) ════════ -->
+    <section class="startband" id="start">
+      <div class="container startband__card">
+        <div class="startband__copy">
+          <b>Start your evaluation</b>
+          <span>Select your state — takes 2–3 minutes</span>
+        </div>
+        <div class="selector">
+          <svg class="selector__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <input type="text" id="stateInput" class="selector__input" placeholder="Select your state to begin…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="stateMenu">
+          <button class="btn btn--lime selector__go" id="goBtn">
+            Start Evaluation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <div class="selector__menu" id="stateMenu" role="listbox"></div>
+        </div>
+        <div class="startband__micro">
+          <span>🔒 HIPAA secure</span><i>·</i><span>💸 Money-back guarantee</span><i>·</i><span>⏱ 2-min signup</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ TICKER ════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span>Same-Day Approval</span><em>✦</em>
+          <span>Licensed Doctors</span><em>✦</em>
+          <span>HIPAA Secure</span><em>✦</em>
+          <span>100% Money-Back</span><em>✦</em>
+          <span>30+ States Covered</span><em>✦</em>
+          <span>24/7 Support</span><em>✦</em>
+        </div>
+        <div class="ticker__group">
+          <span>Same-Day Approval</span><em>✦</em>
+          <span>Licensed Doctors</span><em>✦</em>
+          <span>HIPAA Secure</span><em>✦</em>
+          <span>100% Money-Back</span><em>✦</em>
+          <span>30+ States Covered</span><em>✦</em>
+          <span>24/7 Support</span><em>✦</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ RATINGS STRIP ════════ -->
+    <section class="ratings">
+      <p class="ratings__label">Trusted &amp; rated by patients across</p>
+      <div class="ratings__row">
+        <div class="ratings__item reveal"><b>4.8</b><div class="ratings__stars">★★★★★</div><span>Google Reviews</span></div>
+        <div class="ratings__item reveal"><b>4.7</b><div class="ratings__stars">★★★★★</div><span>Trustpilot</span></div>
+        <div class="ratings__item reveal"><b>4.7</b><div class="ratings__stars">★★★★★</div><span>BBB Rating</span></div>
+        <div class="ratings__item reveal"><b>4.9</b><div class="ratings__stars">★★★★★</div><span>Real Reviews</span></div>
+      </div>
+    </section>
+
+    <!-- ════════ BENTO ════════ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="split-head reveal">
+          <div>
+            <span class="eyebrow">Why Marydoc</span>
+            <h2 class="h2">Getting Approved<br>Just Got Effortless</h2>
+          </div>
+          <div class="split-head__right">
+            <p>No waiting rooms, no paperwork mazes, no judgment. A clinical-grade telehealth flow built around one thing — getting you certified fast.</p>
+            <a href="#start" class="btn btn--green">Get Started <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+
+        <div class="bento">
+          <!-- approval chart -->
+          <article class="bento__card bento__card--wide reveal">
+            <div class="bento__copy">
+              <h3>98% of eligible patients get approved</h3>
+              <p>Our doctors pre-screen your intake so your consultation time is never wasted.</p>
+            </div>
+            <div class="mock-chart" aria-hidden="true">
+              <div class="mock-chart__bars">
+                <i style="--h:34%"></i><i style="--h:48%"></i><i style="--h:42%"></i><i style="--h:61%"></i><i style="--h:55%"></i><i style="--h:74%"></i><i style="--h:68%"></i><i style="--h:86%"></i><i style="--h:98%" class="hot"></i>
+              </div>
+              <div class="mock-chart__flag">98% approval rate</div>
+            </div>
+          </article>
+
+          <!-- avg time stat -->
+          <article class="bento__card bento__card--stat reveal">
+            <div class="bento__big"><span data-count="12">0</span><small>min</small></div>
+            <h3>Average consultation time</h3>
+            <p>From "hello" to recommendation — most visits wrap in minutes.</p>
+            <div class="bento__orbit" aria-hidden="true"><span></span></div>
+          </article>
+
+          <!-- states -->
+          <article class="bento__card reveal">
+            <div class="bento__big"><span data-count="30">0</span><small>+</small></div>
+            <h3>States covered</h3>
+            <p>One platform, licensed physicians in every state we serve.</p>
+            <div class="state-pills" aria-hidden="true">
+              <span>CA</span><span>NY</span><span>FL</span><span>TX</span><span>PA</span><span>OH</span><span>IL</span><span>MI</span><span class="more">+22</span>
+            </div>
+          </article>
+
+          <!-- guarantee -->
+          <article class="bento__card bento__card--dark reveal">
+            <div class="bento__shield" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3>Not approved? You don't pay.</h3>
+            <p>100% money-back guarantee — you're only charged if a doctor certifies you. Zero risk, zero hidden fees.</p>
+            <a href="#faq" class="bento__link">Read our guarantee →</a>
+          </article>
+
+          <!-- steps strip -->
+          <article class="bento__card bento__card--wide bento__card--steps reveal" id="how">
+            <div class="bento__copy">
+              <h3>Three steps. One sitting.</h3>
+              <p>The entire flow — intake, consult, certification — finishes in 15–30 minutes.</p>
+            </div>
+            <ol class="mini-steps">
+              <li><b>1</b><div><strong>Quick intake</strong><span>2–3 min HIPAA form</span></div></li>
+              <li><b>2</b><div><strong>Meet your doctor</strong><span>10–15 min video call</span></div></li>
+              <li><b>3</b><div><strong>Get certified</strong><span>Emailed same day</span></div></li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ FEATURE ROWS ════════ -->
+    <section class="section section--cream">
+      <div class="container">
+
+        <div class="feat reveal">
+          <div class="feat__visual">
+            <div class="feat__photo feat__photo--a">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=640&h=640&fit=crop&q=80" alt="Doctor on a telehealth consultation" loading="lazy">
+            </div>
+            <div class="feat__float feat__float--doc" aria-hidden="true">
+              <div class="toast toast--white">
+                <div class="toast__check">🩺</div>
+                <div><b>Dr. Carter joined</b><small>Your consult is starting…</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="feat__body">
+            <span class="tag">Real Doctors, Real Care</span>
+            <h2 class="h2">Talk to a Physician,<br>Not a Web Form</h2>
+            <p>Every evaluation is a live video or audio visit with a board-certified, state-licensed doctor who reviews your history and answers your questions — no bots, no rubber stamps.</p>
+            <ul class="check-list">
+              <li>Board-certified &amp; state-licensed physicians</li>
+              <li>Evidence-based, judgment-free evaluations</li>
+              <li>Ask anything — dosing, products, state rules</li>
+            </ul>
+            <a href="#start" class="btn btn--green">Meet Your Doctor</a>
+          </div>
+        </div>
+
+        <div class="feat feat--flip reveal">
+          <div class="feat__visual">
+            <div class="feat__photo feat__photo--b">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=640&h=640&fit=crop&q=80" alt="Patient completing checkout on phone" loading="lazy">
+            </div>
+            <div class="feat__float feat__float--save" aria-hidden="true">
+              <div class="save-card">
+                <small>Dispensary savings with MMJ card</small>
+                <b>Up to 40<span>%</span></b>
+                <div class="save-card__bar"><i></i></div>
+                <em>vs. recreational taxes</em>
+              </div>
+            </div>
+          </div>
+          <div class="feat__body">
+            <span class="tag tag--lime">Card In Hand, Fast</span>
+            <h2 class="h2">Approved Today.<br>Dispensary Tomorrow.</h2>
+            <p>Your digital certification lands in your inbox within hours — often minutes. Then enjoy patient pricing, higher possession limits, and access to medical-grade products.</p>
+            <ul class="check-list">
+              <li>Digital recommendation emailed same day</li>
+              <li>Lower taxes &amp; patient-only discounts</li>
+              <li>Legal protection &amp; higher purchase limits</li>
+            </ul>
+            <a href="#start" class="btn btn--green">Start My Application</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════ CONDITIONS (dark band) ════════ -->
+    <section class="section section--forest" id="conditions">
+      <div class="forest-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="center-head reveal">
+          <span class="eyebrow eyebrow--lime">Do I Qualify?</span>
+          <h2 class="h2">Conditions Our Doctors<br>Commonly Certify</h2>
+          <p>Eligibility varies by state — your physician confirms it during the visit. If you're not approved, you're not charged.</p>
+        </div>
+        <div class="cond-grid">
+          <div class="cond reveal"><span class="cond__ico">🩹</span><b>Chronic Pain</b><p>Persistent or treatment-resistant pain relief</p></div>
+          <div class="cond reveal"><span class="cond__ico">🧠</span><b>Anxiety</b><p>Plant-based support for stress &amp; tension</p></div>
+          <div class="cond reveal"><span class="cond__ico">😴</span><b>Insomnia</b><p>Restore healthy sleep without sedatives</p></div>
+          <div class="cond reveal"><span class="cond__ico">⚡</span><b>Migraines</b><p>Reduce frequency &amp; intensity of attacks</p></div>
+          <div class="cond reveal"><span class="cond__ico">🎗</span><b>PTSD</b><p>Support trauma recovery &amp; resilience</p></div>
+          <div class="cond reveal"><span class="cond__ico">🦴</span><b>Arthritis</b><p>Calm inflammation &amp; joint discomfort</p></div>
+          <div class="cond reveal"><span class="cond__ico">🌀</span><b>Epilepsy</b><p>Recognized therapeutic applications</p></div>
+          <div class="cond cond--more reveal"><b>+ Many More</b><p>Cancer, MS, glaucoma &amp; other state-qualifying conditions</p><a href="#start">Check eligibility →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ TESTIMONIALS ════════ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="center-head reveal">
+          <span class="eyebrow">Patient Stories</span>
+          <h2 class="h2">Guaranteed Results,<br>Loved by Patients</h2>
+          <p>Real reviews from real evaluations — verified across Google, Trustpilot &amp; BBB.</p>
+        </div>
+
+        <div class="tgrid">
+          <figure class="tcard reveal">
+            <div class="tcard__img">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=520&h=640&fit=crop&q=80" alt="Lauren S." loading="lazy">
+              <figcaption class="tcard__overlay">
+                <div class="tcard__stars">★★★★★</div>
+                <p>"It's easy, convenient, and quick! Everything makes Marydoc the one I go back to."</p>
+                <b>Lauren S. <span>· Verified Google Review</span></b>
+              </figcaption>
+            </div>
+          </figure>
+
+          <div class="tcard tcard--quote reveal">
+            <div class="tcard__stars tcard__stars--lime">★★★★★</div>
+            <blockquote>"Highly professional practice — my experience was seamless. The application was a snap, the doctor was prompt and friendly. Overall <em>OUTSTANDING!</em>"</blockquote>
+            <div class="tcard__who">
+              <span class="tcard__avatar">RB</span>
+              <div><b>Randal B.</b><small>✓ Verified Google Review</small></div>
+            </div>
+            <div class="tcard__deco" aria-hidden="true">"</div>
+          </div>
+
+          <figure class="tcard reveal">
+            <div class="tcard__img">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=520&h=640&fit=crop&q=80" alt="Juan R." loading="lazy">
+              <figcaption class="tcard__overlay">
+                <div class="tcard__stars">★★★★★</div>
+                <p>"Received my consultation call within 2–3 minutes. Had my recommendation within minutes!"</p>
+                <b>Juan R. <span>· Verified Google Review</span></b>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+
+        <div class="treviews-foot reveal">
+          <div class="treviews-foot__avatars" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&q=80" alt="">
+            <span>+50K</span>
+          </div>
+          <p><b>Join 50,000+ certified patients</b> — quick, easy, and pain-free, by their own words.</p>
+          <a href="#start" class="btn btn--green btn--sm">Get My Card</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ FAQ ════════ -->
+    <section class="section section--cream" id="faq">
+      <div class="container faq">
+        <div class="faq__left">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="h2">Frequently Asked<br>Questions</h2>
+          <p class="faq__intro">Everything about getting your card online — pricing, timing, privacy, and what happens after approval.</p>
+          <div class="faq__help reveal">
+            <b>Got more questions?</b>
+            <p>Our team answers 24/7 — by phone, email, or live chat.</p>
+            <a href="tel:8882818758" class="btn btn--green btn--sm">Talk to Us</a>
+          </div>
+        </div>
+
+        <div class="faq__list" id="faqList">
+          <details class="qa" open>
+            <summary>How do I get a medical marijuana card online?<span class="qa__plus"></span></summary>
+            <div class="qa__body">Complete a secure intake form, then meet a licensed physician over video or audio. If you qualify, your certification is emailed to you — finish any state registration and you're set to buy legally.</div>
+          </details>
+          <details class="qa">
+            <summary>Can I really get approved the same day?<span class="qa__plus"></span></summary>
+            <div class="qa__body">Yes — same-day evaluations are standard. Most qualified patients receive their recommendation within minutes to an hour after the consult, depending on state processing.</div>
+          </details>
+          <details class="qa">
+            <summary>How much does it cost?<span class="qa__plus"></span></summary>
+            <div class="qa__body">Evaluations range from $55–$199 depending on your state, with no hidden charges. And if the doctor doesn't approve you, you pay nothing — guaranteed.</div>
+          </details>
+          <details class="qa">
+            <summary>Do I need to visit a clinic in person?<span class="qa__plus"></span></summary>
+            <div class="qa__body">No. The entire process — intake, doctor consultation, and certification — happens online from home. No waiting rooms, ever.</div>
+          </details>
+          <details class="qa">
+            <summary>Is my information private?<span class="qa__plus"></span></summary>
+            <div class="qa__body">Completely. Your personal and medical data is protected by HIPAA-compliant systems end-to-end. Consultations are confidential and never shared.</div>
+          </details>
+          <details class="qa">
+            <summary>How long is my card valid?<span class="qa__plus"></span></summary>
+            <div class="qa__body">Typically one year, though it varies by state. When it's time, a quick online renewal consult keeps your access uninterrupted.</div>
+          </details>
+          <details class="qa">
+            <summary>What if I'm not approved?<span class="qa__plus"></span></summary>
+            <div class="qa__body">You get a 100% refund automatically. You only ever pay for a successful certification — that's our promise.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ CTA BANNER ════════ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="mega reveal">
+          <div class="mega__glow" aria-hidden="true"></div>
+          <div class="mega__body">
+            <span class="mega__badge">⚡ 2-minute signup · same-day decision</span>
+            <h2 class="mega__title">Don't Wait.<br>Get Certified From Day One.</h2>
+            <p class="mega__sub">Licensed doctors are online right now. Start your evaluation and have your recommendation before dinner.</p>
+            <div class="mega__actions">
+              <a href="#start" class="btn btn--lime btn--xl">Start My Evaluation</a>
+              <a href="tel:8882818758" class="btn btn--ghost">Call (888) 281-8758</a>
+            </div>
+          </div>
+          <div class="mega__visual" aria-hidden="true">
+            <div class="mmj-card mmj-card--tilt">
+              <div class="mmj-card__top">
+                <svg viewBox="0 0 48 48" fill="none" class="mmj-card__leaf"><path d="M24 43C24 43 7 28.5 7 17.5C7 11 11.5 6.5 18 6.5C20.8 6.5 23.2 8.3 24 11C24.8 8.3 27.2 6.5 30 6.5C36.5 6.5 41 11 41 17.5C41 28.5 24 43 24 43Z" fill="#98c54e"/></svg>
+                <span>MEDICAL CANNABIS PATIENT</span>
+              </div>
+              <div class="mmj-card__chip"></div>
+              <div class="mmj-card__name">YOUR NAME HERE</div>
+              <div class="mmj-card__row">
+                <div><small>PATIENT ID</small><b>MD-····-····</b></div>
+                <div><small>VALID THRU</small><b>06 / 2027</b></div>
+              </div>
+              <div class="mmj-card__shine"></div>
+            </div>
+            <div class="toast mega__toast">
+              <div class="toast__check">✓</div>
+              <div><b>You're approved!</b><small>Check your inbox</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#top" class="logo logo--light" aria-label="Marydoc home">
+            <svg class="logo__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 43C24 43 7 28.5 7 17.5C7 11 11.5 6.5 18 6.5C20.8 6.5 23.2 8.3 24 11C24.8 8.3 27.2 6.5 30 6.5C36.5 6.5 41 11 41 17.5C41 28.5 24 43 24 43Z" fill="#98c54e"/>
+              <path d="M24 39C24 39 11 27 11 17.8C11 13.4 14.4 10 18.8 10C21.2 10 23.3 11.6 24 13.9C24.7 11.6 26.8 10 29.2 10C33.6 10 37 13.4 37 17.8C37 27 24 39 24 39Z" fill="#fff"/>
+            </svg>
+            <span class="logo__word"><b>Mary</b><i>doc</i></span>
+          </a>
+          <p>The United States' most trusted medical marijuana telehealth platform. Licensed doctors. HIPAA secure. Patients first.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H2.9l7.5-8.6L2.5 2h6.6l4.5 6.6L18.9 2z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <nav class="footer__col" aria-label="Services">
+          <b>Services</b>
+          <a href="#start">Book Appointment</a>
+          <a href="#start">Card Renewal</a>
+          <a href="#conditions">Qualifying Conditions</a>
+          <a href="#how">How It Works</a>
+        </nav>
+        <nav class="footer__col" aria-label="Company">
+          <b>Company</b>
+          <a href="#features">Why Marydoc</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:support@marydoc.com">Contact</a>
+        </nav>
+        <nav class="footer__col" aria-label="Legal">
+          <b>Legal</b>
+          <a href="#">Privacy Policy</a>
+          <a href="#">HIPAA Compliance</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Refund Policy</a>
+        </nav>
+      </div>
+
+      <p class="footer__states">Arizona · Arkansas · California · Connecticut · Delaware · Florida · Georgia · Illinois · Iowa · Louisiana · Maine · Maryland · Massachusetts · Michigan · Minnesota · Missouri · Montana · Nevada · New Jersey · New Mexico · New York · North Dakota · Ohio · Oklahoma · Pennsylvania · Texas · Vermont · Virginia · Washington DC · West Virginia</p>
+
+      <p class="footer__legal"><b>Medical Disclaimer:</b> Marydoc connects patients with state-licensed physicians for medical cannabis evaluations in accordance with applicable state laws. Content is informational only and not medical advice. Approval is determined solely by the evaluating physician. Marydoc does not provide or sell cannabis products.</p>
+
+      <div class="footer__bottom">
+        <span>© 2026 Marydoc. All rights reserved.</span>
+        <span>Made with care, for patients.</span>
+      </div>
+    </div>
+    <div class="footer__watermark" aria-hidden="true">MARYDOC</div>
+  </footer>
+
+  <!-- sticky mobile CTA -->
+  <div class="sticky-cta"><a href="#start" class="btn btn--lime btn--xl">Start My Evaluation</a></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

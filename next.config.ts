@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  transpilePackages: ["@theme-toggles/react"],
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

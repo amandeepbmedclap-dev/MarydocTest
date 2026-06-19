@@ -5,36 +5,38 @@ import { Footer } from "@/components/landing/Footer";
 import { HeroWaveDivider } from "@/components/landing/HeroWaveDivider";
 import { PromoPopup } from "@/components/landing/PromoPopup";
 import { LoadingAnimation } from "@/components/landing/LoadingAnimation";
+import { EvaluationFormProvider } from "@/components/landing/EvaluationFormProvider";
+import { PreFooterFormCTA } from "@/components/landing/PreFooterFormCTA";
 
 const Testimonials = dynamic(
   () => import("@/components/landing/Testimonials").then((mod) => mod.Testimonials),
   {
     loading: () => (
-      <section aria-label="Loading testimonials" className="min-h-[60vh] bg-white">
+      <section aria-label="Loading testimonials" className="min-h-[60vh] bg-surface">
         <LoadingAnimation className="min-h-[60vh] w-full" compact />
       </section>
     ),
   },
 );
 
-export const heroGradient = "var(--marydoc-gradient)";
-
 export default function Home() {
   return (
-    <main id="main-content" className="relative overflow-x-clip">
-      <div className="relative overflow-visible">
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{ background: heroGradient }}
-          aria-hidden="true"
-        />
-        <Header />
-        <Hero />
-        <HeroWaveDivider />
-      </div>
-      <Testimonials />
-      <Footer />
-      <PromoPopup />
-    </main>
+    <EvaluationFormProvider>
+      <main id="main-content" className="relative overflow-x-clip">
+        <div className="relative overflow-visible">
+          <div
+            className="pointer-events-none absolute inset-0 bg-hero"
+            aria-hidden="true"
+          />
+          <Header />
+          <Hero />
+          <HeroWaveDivider />
+        </div>
+        <Testimonials />
+        <PreFooterFormCTA />
+        <Footer />
+        <PromoPopup />
+      </main>
+    </EvaluationFormProvider>
   );
 }

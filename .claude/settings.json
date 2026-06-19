@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ping *)",
+      "Bash(npx shadcn@latest init --help)"
+    ]
+  }
+}

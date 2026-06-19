@@ -296,7 +296,7 @@ export function Testimonials() {
 
   return (
     <section id="testimonials" className="relative z-10 scroll-mt-20 sm:scroll-mt-24">
-      <div className="bg-white py-10 sm:py-14 md:py-20 lg:py-24">
+      <div className="bg-surface py-10 transition-colors duration-300 sm:py-14 md:py-20 lg:py-24">
         <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <FeaturedVideoTestimonial />
 
@@ -362,7 +362,7 @@ export function Testimonials() {
                   >
                     <span
                       className={`block rounded-full transition-[width,background-color] duration-300 ease-out ${
-                        i === slideIndex ? "h-2.5 w-6 bg-[#552c85]" : "h-2.5 w-2.5 bg-[#d1d5db]"
+                        i === slideIndex ? "h-2.5 w-6 bg-marydoc-purple" : "h-2.5 w-2.5 bg-dot-inactive"
                       }`}
                     />
                   </button>

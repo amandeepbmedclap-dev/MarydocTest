@@ -9,7 +9,7 @@ const waveTop =
 function WaveTile() {
   return (
     <>
-      <path fill="#ffffff" d={`${waveTop} L${WAVE_WIDTH},96 L0,96 Z`} />
+      <path className="fill-surface" d={`${waveTop} L${WAVE_WIDTH},96 L0,96 Z`} />
       <g transform="translate(0,-10)">
         <path
           fill="none"

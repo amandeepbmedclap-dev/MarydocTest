@@ -84,7 +84,7 @@ export function InitialLoadScreen() {
 
   return createPortal(
     <div
-      className={`initial-load-enhanced absolute inset-0 flex items-center justify-center bg-white transition-opacity duration-500 ease-out ${
+      className={`initial-load-enhanced absolute inset-0 flex items-center justify-center bg-surface transition-opacity duration-500 ease-out ${
         fadeOut ? "pointer-events-none opacity-0" : "opacity-100"
       }`}
       aria-hidden={fadeOut}
