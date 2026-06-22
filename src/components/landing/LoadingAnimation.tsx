@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useId } from "react";
+import { useEffect } from "react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const MARK_VIEWBOX = "0 0 192 192";
@@ -36,7 +36,6 @@ type LoadingAnimationProps = {
 
 export function LoadingAnimation({ className = "", compact = false, onVisible }: LoadingAnimationProps) {
   const prefersReducedMotion = useReducedMotion();
-  const clipId = useId().replace(/:/g, "");
   const canvas = compact ? "h-24 w-24" : "h-32 w-32 sm:h-36 sm:w-36";
   const logoClass = compact ? "h-7" : "h-8 sm:h-9";
   const drawDuration = prefersReducedMotion ? 0.01 : 2;
@@ -61,12 +60,6 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
           className={`relative ${canvas}`}
         >
           <svg viewBox={MARK_VIEWBOX} className="h-full w-full" fill="none" aria-hidden="true">
-            <defs>
-              <clipPath id={clipId}>
-                <circle cx="95.77" cy="95.77" r="88" />
-              </clipPath>
-            </defs>
-
             <motion.circle
               cx="95.77"
               cy="95.77"
@@ -77,26 +70,6 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: drawDuration, ease: drawEase }}
             />
-
-            <g clipPath={`url(#${clipId})`}>
-              <motion.rect
-                x="12"
-                width="168"
-                fill="#188a44"
-                className="opacity-15"
-                initial={{ height: 0, y: 170 }}
-                animate={
-                  prefersReducedMotion
-                    ? { height: 0, y: 170 }
-                    : { height: 132, y: 38 }
-                }
-                transition={
-                  prefersReducedMotion
-                    ? { duration: 0.01 }
-                    : { duration: 3, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }
-                }
-              />
-            </g>
 
             <motion.circle
               cx="76.3"
