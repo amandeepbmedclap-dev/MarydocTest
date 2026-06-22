@@ -58,6 +58,7 @@ export function Hero() {
 
           <Button
             render={<a href="#get-started" id="get-started" />}
+            nativeButton={false}
             className="hero-fade-in hero-cta mt-6 h-auto w-fit rounded-full bg-[#157a3c] px-8 py-3 text-[13px] font-semibold text-white shadow-[0_10px_28px_rgba(24,138,68,0.35)] hover:bg-[#136b34] hover:shadow-[0_14px_32px_rgba(24,138,68,0.45)] sm:mt-7 sm:px-10 sm:py-3.5 sm:text-[14px] lg:mt-9"
           >
             Let&apos;s start

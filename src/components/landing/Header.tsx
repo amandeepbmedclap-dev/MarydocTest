@@ -16,6 +16,7 @@ function GetStartedButton({ className = "" }: { className?: string }) {
   return (
     <Button
       render={<a href="#get-started" />}
+      nativeButton={false}
       className={`h-auto rounded-full bg-marydoc-green px-5 py-2.5 text-[12px] font-semibold text-white hover:bg-[#157a3c] hover:shadow-[0_8px_24px_rgba(24,138,68,0.35)] sm:px-6 sm:text-[13px] ${className}`}
     >
       Get Started

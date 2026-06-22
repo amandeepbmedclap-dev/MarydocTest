@@ -81,11 +81,10 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
             <g clipPath={`url(#${clipId})`}>
               <motion.rect
                 x="12"
-                y="170"
                 width="168"
-                height="0"
                 fill="#188a44"
                 className="opacity-15"
+                initial={{ height: 0, y: 170 }}
                 animate={
                   prefersReducedMotion
                     ? { height: 0, y: 170 }

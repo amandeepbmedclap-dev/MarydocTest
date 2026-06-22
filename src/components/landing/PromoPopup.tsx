@@ -114,6 +114,7 @@ export function PromoPopup() {
             </p>
             <Button
               render={<a href="#get-started" onClick={dismiss} />}
+              nativeButton={false}
               className="mt-7 h-auto w-fit rounded-full bg-marydoc-green px-8 py-3.5 text-[14px] font-semibold text-white shadow-[0_10px_28px_rgba(24,138,68,0.35)] hover:bg-[#157a3c] sm:mt-9 sm:px-9 sm:text-[15px]"
             >
               Get Started
