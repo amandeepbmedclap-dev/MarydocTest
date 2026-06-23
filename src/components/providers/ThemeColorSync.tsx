@@ -3,8 +3,8 @@
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
 
-const LIGHT_THEME_COLOR = "#552c85";
-const DARK_THEME_COLOR = "#0f0a18";
+const LIGHT_THEME_COLOR = "#3a7057";
+const DARK_THEME_COLOR = "#0b1812";
 
 export function ThemeColorSync() {
   const { resolvedTheme } = useTheme();

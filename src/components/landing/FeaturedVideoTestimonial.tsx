@@ -59,8 +59,8 @@ export function FeaturedVideoTestimonial() {
       viewport={scrollViewportMid}
       transition={{ duration: 0.95, ease: EASE, delay: 0.08 }}
     >
-      <div className="relative mx-auto aspect-video w-full overflow-hidden rounded-xl bg-black shadow-[0_16px_40px_rgba(85,44,133,0.18)] sm:aspect-[2/1] sm:rounded-2xl md:aspect-[21/9] md:rounded-3xl lg:rounded-[28px]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#552c85] to-[#188a44]" aria-hidden="true" />
+      <div className="relative mx-auto aspect-video w-full overflow-hidden rounded-xl bg-black shadow-[0_16px_40px_rgba(58,112,87,0.18)] sm:aspect-[2/1] sm:rounded-2xl md:aspect-[21/9] md:rounded-3xl lg:rounded-[28px]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3a7057] to-[#58af91]" aria-hidden="true" />
         <video
           ref={videoRef}
           src={videoSrc}

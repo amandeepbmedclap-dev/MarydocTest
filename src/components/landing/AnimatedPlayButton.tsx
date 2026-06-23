@@ -29,8 +29,8 @@ export function AnimatedPlayButton({
 
   const innerClass =
     size === "lg"
-      ? "relative flex h-11 w-11 items-center justify-center rounded-full shadow-[0_10px_32px_rgba(24,138,68,0.5)] ring-2 ring-white/30 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
-      : "relative flex h-9 w-9 items-center justify-center rounded-full shadow-[0_8px_24px_rgba(24,138,68,0.45)] ring-2 ring-white/25 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14";
+      ? "relative flex h-11 w-11 items-center justify-center rounded-full shadow-[0_10px_32px_rgba(88,175,145,0.5)] ring-2 ring-white/30 sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+      : "relative flex h-9 w-9 items-center justify-center rounded-full shadow-[0_8px_24px_rgba(88,175,145,0.45)] ring-2 ring-white/25 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14";
 
   const content = (
     <>
@@ -79,7 +79,7 @@ export function AnimatedPlayButton({
       </motion.div>
       <motion.div
         className={innerClass}
-        style={{ background: "linear-gradient(145deg, #188a44 0%, #157a3c 55%, #552c85 100%)" }}
+        style={{ background: "linear-gradient(145deg, #58af91 0%, #4b957b 55%, #3a7057 100%)" }}
         whileHover={prefersReducedMotion ? undefined : { scale: 1.06 }}
         transition={SPRING}
       >

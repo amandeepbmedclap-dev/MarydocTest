@@ -21,7 +21,7 @@ export function EvaluationForm() {
 
   return (
     <form
-      className="flex flex-col gap-[1.15rem] rounded-[1.35rem] bg-card p-[1.35rem] pb-[1.25rem] text-card-foreground shadow-[0_28px_56px_rgba(17,8,32,0.22),0_0_0_1px_rgba(85,44,133,0.06)] sm:p-6 sm:pb-[1.35rem]"
+      className="flex flex-col gap-[1.15rem] rounded-[1.35rem] bg-card p-[1.35rem] pb-[1.25rem] text-card-foreground shadow-[0_28px_56px_rgba(17,8,32,0.22),0_0_0_1px_rgba(58,112,87,0.06)] sm:p-6 sm:pb-[1.35rem]"
       onSubmit={handleSubmit}
       noValidate
     >
@@ -122,7 +122,7 @@ export function EvaluationForm() {
 
       <Button
         type="submit"
-        className="h-auto w-full gap-2 rounded-[0.85rem] bg-marydoc-green px-4 py-[0.9rem] text-[0.9375rem] font-semibold text-white hover:bg-[#157a3c]"
+        className="h-auto w-full gap-2 rounded-[0.85rem] bg-marydoc-green px-4 py-[0.9rem] text-[0.9375rem] font-semibold text-white hover:bg-[#4b957b]"
       >
         Continue
         <ArrowRight className="size-[1.1rem]" />

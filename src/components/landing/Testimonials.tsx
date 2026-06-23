@@ -103,7 +103,7 @@ function VideoStoryThumbnail({
 
   return (
     <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#552c85] to-[#188a44]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#3a7057] to-[#58af91]" aria-hidden="true" />
       {!imageError ? (
         <Image
           src={poster}
@@ -247,7 +247,7 @@ function CarouselArrow({
       onClick={onClick}
       disabled={disabled}
       aria-label={direction === "left" ? "Previous videos" : "Next videos"}
-      className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-[#552c85] text-white transition-colors duration-300 hover:bg-[#45236d] disabled:cursor-not-allowed disabled:opacity-35"
+      className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-[#3a7057] text-white transition-colors duration-300 hover:bg-[#315f4a] disabled:cursor-not-allowed disabled:opacity-35"
       whileHover={disabled ? undefined : { scale: 1.08 }}
       whileTap={disabled ? undefined : { scale: 0.94 }}
       transition={SPRING}

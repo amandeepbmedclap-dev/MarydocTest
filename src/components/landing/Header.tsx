@@ -30,9 +30,9 @@ export function Header() {
       <div className="relative mx-auto flex h-[60px] min-w-0 max-w-[1440px] items-center justify-between gap-3 px-4 sm:h-[68px] sm:px-6 md:h-[72px] lg:h-[80px] lg:px-10 xl:px-14 2xl:px-16">
         <a href="/" className="relative z-[110] min-w-0 shrink-0 cursor-pointer">
           <Image
-            src="/marydoc.svg"
+            src="/asset.svg"
             alt="Marydoc"
-            width={160}
+            width={180}
             height={36}
             className="h-7 w-auto sm:h-8 md:h-9"
             loading="eager"

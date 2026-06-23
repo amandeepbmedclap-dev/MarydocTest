@@ -115,7 +115,7 @@ export function PromoPopup() {
             <Button
               render={<a href="#get-started" onClick={dismiss} />}
               nativeButton={false}
-              className="mt-7 h-auto w-fit rounded-full bg-marydoc-green px-8 py-3.5 text-[14px] font-semibold text-white shadow-[0_10px_28px_rgba(24,138,68,0.35)] hover:bg-[#157a3c] sm:mt-9 sm:px-9 sm:text-[15px]"
+              className="mt-7 h-auto w-fit rounded-full bg-marydoc-green px-8 py-3.5 text-[14px] font-semibold text-white shadow-[0_10px_28px_rgba(88,175,145,0.35)] hover:bg-[#4b957b] sm:mt-9 sm:px-9 sm:text-[15px]"
             >
               Get Started
             </Button>
@@ -141,7 +141,7 @@ export function PromoPopup() {
                 aria-hidden
               />
               <div
-                className="absolute inset-0 bg-gradient-to-br from-[#552c85]/25 via-transparent to-[#188a44]/30"
+                className="absolute inset-0 bg-gradient-to-br from-[#3a7057]/25 via-transparent to-[#58af91]/30"
                 aria-hidden="true"
               />
             </div>

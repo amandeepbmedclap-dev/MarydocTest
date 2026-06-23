@@ -13,7 +13,7 @@ function WaveTile() {
       <g transform="translate(0,-10)">
         <path
           fill="none"
-          stroke="#d4f5de"
+          stroke="#bcdfd3"
           strokeWidth="3"
           vectorEffect="non-scaling-stroke"
           d={waveTop}
@@ -22,7 +22,7 @@ function WaveTile() {
       <g transform="translate(0,-5)">
         <path
           fill="none"
-          stroke="rgba(24,138,68,0.55)"
+          stroke="rgba(88,175,145,0.55)"
           strokeWidth="2"
           vectorEffect="non-scaling-stroke"
           d={waveTop}

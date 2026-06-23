@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3361.87 839.03">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MontserratAlternates-Bold, 'Montserrat Alternates';
+        font-size: 444.38px;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #552c85;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 44px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #188a44;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(696.45 722.61)"><tspan class="cls-5" x="0" y="0">MARY</tspan><tspan class="cls-3" x="1571.75" y="0">DOC</tspan></text>
+  <path class="cls-4" d="M54.67,815.83v-380.93c0-94.09,76.27-170.36,170.36-170.36h0c94.09,0,170.36,76.27,170.36,170.36v380.93"/>
+  <path class="cls-4" d="M395.39,815.83v-235.42c0-58.15,47.14-105.28,105.28-105.28h0c58.15,0,105.28,47.14,105.28,105.28v235.42"/>
+  <circle class="cls-5" cx="225.03" cy="105.29" r="105.29"/>
+  <circle class="cls-2" cx="500.68" cy="375.6" r="65.07"/>
+</svg>

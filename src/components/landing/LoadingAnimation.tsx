@@ -64,7 +64,7 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
               cx="95.77"
               cy="95.77"
               r="92"
-              stroke="#552c85"
+              stroke="#3a7057"
               strokeWidth="2.2"
               initial={{ pathLength: 0, opacity: 0.4 }}
               animate={{ pathLength: 1, opacity: 1 }}
@@ -75,7 +75,7 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
               cx="76.3"
               cy="47.3"
               r="14"
-              stroke="#188a44"
+              stroke="#58af91"
               strokeWidth="2"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
@@ -89,7 +89,7 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
               cx="117.91"
               cy="47.3"
               r="14"
-              stroke="#188a44"
+              stroke="#58af91"
               strokeWidth="2"
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
@@ -104,7 +104,7 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
               <motion.path
                 key={path.d.slice(0, 24)}
                 d={path.d}
-                stroke="#552c85"
+                stroke="#3a7057"
                 strokeWidth="1.8"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -122,7 +122,7 @@ export function LoadingAnimation({ className = "", compact = false, onVisible }:
           {SPARKLES.map((sparkle, index) => (
             <motion.div
               key={index}
-              className="absolute h-1 w-1 rounded-full bg-[#188a44]"
+              className="absolute h-1 w-1 rounded-full bg-[#58af91]"
               style={{ left: `${sparkle.left}%`, top: "18%" }}
               animate={
                 prefersReducedMotion
