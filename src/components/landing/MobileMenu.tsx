@@ -11,7 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-const THEME_GRADIENT = "linear-gradient(160deg, #3a7057 0%, #315f4a 42%, #58af91 100%)";
+const THEME_GRADIENT = "linear-gradient(160deg, #0f5132 0%, #0b3d26 42%, #3aa17e 100%)";
 
 type NavLink = { label: string; href: string };
 
@@ -37,7 +37,7 @@ export function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
         side="right"
         showCloseButton={false}
         aria-label="Mobile navigation"
-        className="w-[min(75vw,360px)] gap-0 rounded-l-2xl border-0 p-0 shadow-[-12px_0_48px_rgba(88,175,145,0.25)] sm:max-w-none"
+        className="w-[min(75vw,360px)] gap-0 rounded-l-2xl border-0 p-0 shadow-[-12px_0_48px_rgba(58,161,126,0.25)] sm:max-w-none"
         style={{
           background: THEME_GRADIENT,
           paddingTop: "env(safe-area-inset-top)",
@@ -72,7 +72,7 @@ export function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="block cursor-pointer border-b border-white/12 py-4 text-[16px] font-medium text-white transition-colors hover:text-[#bcdfd3]"
+                  className="block cursor-pointer border-b border-white/12 py-4 text-[16px] font-medium text-white transition-colors hover:text-[#cfeae0]"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -85,7 +85,7 @@ export function MobileMenu({ navLinks }: { navLinks: NavLink[] }) {
         <div className="border-t border-white/15 px-5 py-5 sm:px-6">
           <Button
             render={<a href="#get-started" onClick={() => setOpen(false)} />}
-            className="h-auto w-full rounded-full bg-marydoc-green px-5 py-3 text-[14px] font-semibold text-white hover:bg-[#4b957b]"
+            className="h-auto w-full rounded-full bg-marydoc-green px-5 py-3 text-[14px] font-semibold text-white hover:bg-[#2f8867]"
           >
             Get Started
           </Button>

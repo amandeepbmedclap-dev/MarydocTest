@@ -17,7 +17,7 @@ function GetStartedButton({ className = "" }: { className?: string }) {
     <Button
       render={<a href="#get-started" />}
       nativeButton={false}
-      className={`h-auto rounded-full bg-marydoc-green px-5 py-2.5 text-[12px] font-semibold text-white hover:bg-[#157a3c] hover:shadow-[0_8px_24px_rgba(24,138,68,0.35)] sm:px-6 sm:text-[13px] ${className}`}
+      className={`h-auto rounded-full bg-marydoc-green px-5 py-2.5 text-[12px] font-semibold text-white hover:bg-[#2f8867] hover:shadow-[0_8px_24px_rgba(58,161,126,0.35)] sm:px-6 sm:text-[13px] ${className}`}
     >
       Get Started
     </Button>
@@ -28,7 +28,7 @@ export function Header() {
   return (
     <HeaderScrollStyle>
       <div className="relative mx-auto flex h-[60px] min-w-0 max-w-[1440px] items-center justify-between gap-3 px-4 sm:h-[68px] sm:px-6 md:h-[72px] lg:h-[80px] lg:px-10 xl:px-14 2xl:px-16">
-        <a href="/" className="relative z-[110] min-w-0 shrink-0 cursor-pointer">
+        <a href="/" className="site-header-logo-wrap relative z-[110] min-w-0 shrink-0 cursor-pointer">
           <Image
             src="/asset.svg"
             alt="Marydoc"

@@ -60,8 +60,8 @@ function FooterLinkColumn({
             className="inline-block text-[13px] font-medium text-white/90 sm:text-[14px]"
             whileHover={
               prefersReducedMotion
-                ? { color: "#bcdfd3" }
-                : { x: align === "right" ? -4 : 4, color: "#bcdfd3" }
+                ? { color: "#cfeae0" }
+                : { x: align === "right" ? -4 : 4, color: "#cfeae0" }
             }
             transition={{ duration: 0.25, ease: EASE }}
           >

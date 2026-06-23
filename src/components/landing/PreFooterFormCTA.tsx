@@ -65,7 +65,7 @@ export function PreFooterFormCTA() {
                   >
                     <Icon
                       aria-hidden="true"
-                      className="!size-4 text-marydoc-green dark:text-marydoc-mint"
+                      className="!size-4 text-marydoc-gold"
                     />
                     {label}
                   </Badge>
@@ -79,7 +79,7 @@ export function PreFooterFormCTA() {
               disabled={isTransitioning}
               className={cn(
                 buttonVariants(),
-                "mt-6 h-auto gap-[0.55rem] rounded-full bg-gradient-to-br from-marydoc-green to-[#4b957b] px-7 py-[0.9rem] text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-white hover:shadow-[0_14px_32px_rgba(88,175,145,0.36)] disabled:cursor-wait disabled:opacity-75",
+                "mt-6 h-auto gap-[0.55rem] rounded-full bg-gradient-to-br from-marydoc-green to-[#2f8867] px-7 py-[0.9rem] text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-white hover:shadow-[0_14px_32px_rgba(58,161,126,0.36)] disabled:cursor-wait disabled:opacity-75",
               )}
               whileHover={prefersReducedMotion ? undefined : { scale: 1.02, y: -1 }}
               whileTap={prefersReducedMotion ? undefined : { scale: 0.98 }}
